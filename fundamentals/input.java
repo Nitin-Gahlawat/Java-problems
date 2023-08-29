@@ -1,10 +1,8 @@
 //Question
     //console input form the user.
 //Answer
-import java.lang.*;
 import java.util.*;
-
-class input {
+class Input {
     public static void main(String[] args) {
         Scanner ob = new Scanner(System.in); // Scanner class object
         // int a=ob.nextInt(); //for integer value

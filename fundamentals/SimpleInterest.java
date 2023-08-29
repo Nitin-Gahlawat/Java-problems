@@ -20,5 +20,6 @@ public class SimpleInterest {
 
         System.out.println("The Simple Interest for is "+simpleInterest);
         System.out.println("The Amount after Interest is "+(simpleInterest+principleAmount));
+        input.close();
     }
 }

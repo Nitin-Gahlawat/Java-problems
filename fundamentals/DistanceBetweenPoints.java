@@ -14,5 +14,6 @@ public class DistanceBetweenPoints {
         float y2=input.nextFloat();
         double distance=Math.sqrt(Math.pow(x2-x1,2)+Math.pow(y2-y1,2));
         System.out.println("The Distance between the points is "+distance);
+        input.close();
     }
 }
