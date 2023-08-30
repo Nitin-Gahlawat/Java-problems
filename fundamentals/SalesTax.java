@@ -1,5 +1,5 @@
 //Question
-    //WAP to display the sales tax with two digits after decimal point
+    //WAP to display the sales tax with two digits after decimal point.
 //Answer
 import java.util.Scanner;
 public class SalesTax {

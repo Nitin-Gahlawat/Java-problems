@@ -1,5 +1,5 @@
 //Question 
-    //input the marks of n subjects from the user and find the average of the student marks
+    //Input the marks of n subjects from the user and find the average of the student marks.
 //Answer
 
 import java.util.Scanner;

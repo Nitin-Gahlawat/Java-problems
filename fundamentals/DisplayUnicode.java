@@ -1,5 +1,5 @@
 //Question 
-    //WAP to Dispaly Unicode in a GUI
+    //WAP to Dispaly Unicode in a GUI.
 //Answer
 import javax.swing.JOptionPane;
 public class DisplayUnicode {

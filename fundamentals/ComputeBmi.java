@@ -1,5 +1,5 @@
 //Question
-    //Calculate the BMI of a person using the formula BMI=(weight)/(height^2)
+    //Calculate the BMI of a person using the formula BMI=(weight)/(height^2).
 //Answer
 import java.util.Scanner;
 public class ComputeBmi {

@@ -1,5 +1,5 @@
 //Question 
-    // convert Fahrenhite To Celsius and Celsius To Fahrenhite
+    //Convert Fahrenhite To Celsius and Celsius To Fahrenhite.
 //Answer
 import java.io.*;
 

@@ -1,5 +1,5 @@
 //Question
-    //console input form the user.
+    //Console input form the user.
 //Answer
 import java.util.*;
 class Input {

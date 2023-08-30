@@ -1,5 +1,5 @@
 //Question
-    //converting the given seconds in days,hours,minutes,seconds
+    //Converting the given seconds in days,hours,minutes,seconds.
 //Answer
 import java.util.Scanner;
 public class DisplayTime {

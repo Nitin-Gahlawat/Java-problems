@@ -1,5 +1,5 @@
 //Question
-    //WAP to display the current time in GMT(Greenwich mean Time) in the format hour:minute:second
+    //WAP to display the current time in GMT(Greenwich mean Time) in the format hour:minute:second.
 //Answer
 public class ShowCurrentTime {
     public static void main(String[] args) {

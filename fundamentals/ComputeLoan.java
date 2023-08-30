@@ -1,5 +1,5 @@
 //Question
-    //WAP to compute the monthly payment and total payment of a loan
+    //WAP to compute the monthly payment and total payment of a loan.
 //Anaswer
 import java.util.Scanner;
 public class ComputeLoan {

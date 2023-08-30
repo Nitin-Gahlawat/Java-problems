@@ -1,6 +1,5 @@
-
 //Question 
-    //Implement ComputeLoan(compute the monthly payment and total payment of a loan) program using GUI
+    //Implement ComputeLoan(compute the monthly payment and total payment of a loan) program using GUI.
 //Answer
 import javax.swing.JOptionPane;
 

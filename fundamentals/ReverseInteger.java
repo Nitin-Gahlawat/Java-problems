@@ -1,5 +1,5 @@
 //Question
-    //WAP to reads an integer and find the reverse of the integer
+    //WAP to reads an integer and find the reverse of the integer.
 //Answer
 
 import javax.swing.*;
