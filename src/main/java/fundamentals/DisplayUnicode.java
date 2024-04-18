@@ -1,5 +1,5 @@
 //Question 
-    //WAP to Dispaly Unicode in a GUI.
+    //WAP to Display Unicode in a GUI.
 //Answer
 package fundamentals;
 import javax.swing.JOptionPane;

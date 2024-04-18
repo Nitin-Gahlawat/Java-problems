@@ -25,7 +25,7 @@ public class BufferReaderWriter {
 		FileReader fr = new FileReader(file);
 		BufferedReader br = new BufferedReader(fr);
 
-		/*To print the full file as a output .*/
+		/*To print the full file as an output .*/
 		// int x;
 		// while((x=br.read())!=-1)
 		// System.out.print((char)x);

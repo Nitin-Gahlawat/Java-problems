@@ -73,7 +73,6 @@ public class JMenuAndToolBar extends JFrame implements ActionListener {
                 fis.read(b);
                 String str = new String(b);
                 ta.setText(str);
-                fis.close();
 
             } catch (IOException e1) {
                 e1.printStackTrace();

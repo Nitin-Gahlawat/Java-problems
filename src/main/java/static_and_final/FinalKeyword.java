@@ -1,7 +1,7 @@
 //Question
     //WAP to show use of Final keyword in java.
 //Answer
-package staticAndFinal;
+package static_and_final;
 class Moon{
     final private String surface;
 

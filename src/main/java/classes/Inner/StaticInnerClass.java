@@ -1,7 +1,7 @@
 //Question
 //WAP to show Static inner Class in java.
 //Answer
-package classes.Inner;
+package classes.inner;
 class OutClass{
 	static String php="Hello form Php";
 	String java="Hello from Java";

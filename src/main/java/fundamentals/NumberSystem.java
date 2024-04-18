@@ -3,7 +3,7 @@
 //Answer
 package fundamentals;
 public class NumberSystem {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         int decimal=10;
         int binary=0b1010;
         int octal=012;

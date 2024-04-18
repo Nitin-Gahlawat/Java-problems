@@ -31,18 +31,18 @@ public class ThreadServer extends Thread {
                 recived = br.readLine();
                 str = "dne";
                 try {
-                    System.out.println("Client " + this.ClientNumber + ": String reciverd is " + recived);
+                    System.out.println("Client " + this.ClientNumber + ": String received is " + recived);
 
                     str = new StringBuffer(recived).reverse().toString();
 
                     ps.print(str + "\n");
                     ps.flush();
                 } catch (NullPointerException n) {
-                    System.out.println("null pointer occured");
+                    System.out.println("null pointer occurred");
                     ps.println("\n");
                     ps.flush();
                 } catch (Exception e) {
-                    System.out.println("Exception occured");
+                    System.out.println("Exception occurred");
                     ps.println("\n");
                     ps.flush();
                 }
@@ -55,7 +55,7 @@ public class ThreadServer extends Thread {
 
     public static void main(String[] args) throws IOException {
         System.out.println("Server Started");
-        try (ServerSocket ss = new ServerSocket(2000);) {
+        try (ServerSocket ss = new ServerSocket(2000)) {
             System.out.println("Server ready to accept");
             int count = 1;
             do {

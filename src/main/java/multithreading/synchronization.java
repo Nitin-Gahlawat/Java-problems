@@ -3,7 +3,7 @@
 //Answer
 package multithreading;
 class MyData{
-    synchronized void display(String s) throws InterruptedException {
+    synchronized void display(String s) {
         for (int i = 0; i < s.length(); i++) {
             System.out.print(s.charAt(i));
         }
@@ -21,11 +21,7 @@ class MyThread extends Thread{
 
     @Override
     public void run() {
-        try {
-            this.d.display(s);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+        this.d.display(s);
     }
 }
 public class synchronization {

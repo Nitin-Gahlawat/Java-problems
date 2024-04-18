@@ -13,13 +13,13 @@ public class operationsOnSeries{
     public static int sum(int n) {
 		int fact=1;
 		for (int i = 1; i <=n; i++) {
-			fact=+i;
+			fact+=i;
 		}
 		 return fact;
 	}
 
     public static void main(String[] args) {
-       factorial(5);
-       sum(5);
+       System.out.println(factorial(5));
+       System.out.println(sum(5));
     }
 }

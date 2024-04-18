@@ -20,7 +20,7 @@ public class operationsOnSeries {
 			return n;
 		return fibonacci(n-2)+fibonacci(n-1);
 	}
-	private static int arr[];
+	private static int[] arr;
 	private static void setArrVal(int n) {
 		arr=new int[n];
 		for (int i = 0; i < n; i++) {

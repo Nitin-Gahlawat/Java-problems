@@ -2,7 +2,7 @@
 	//Copy CopyFile.java to resource.txt by changing its content to upper case.
 //Answer
 
-package streams.file_oprations;
+package streams.file_operations;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -10,8 +10,8 @@ import java.io.IOException;
 
 public class CopyFile {
 	public static void main(String[] args) throws IOException {
-		String source=System.getProperty("user.dir")+"\\src\\main\\java\\streams\\file_oprations\\CopyFile.java";
-		String dist=System.getProperty("user.dir")+"\\src\\main\\java\\streams\\file_oprations\\resource.txt";
+		String source=System.getProperty("user.dir")+"\\src\\main\\java\\streams\\file_operations\\CopyFile.java";
+		String dist=System.getProperty("user.dir")+"\\src\\main\\java\\streams\\file_operations\\resource.txt";
 		
 
 		//Reading and Storing the array in outputArray

@@ -1,5 +1,5 @@
 //Question
-    //WAP to convert integer to diffrent number system
+    //WAP to convert integer to different number system
 //Answer
 package fundamentals;
 public class IntegerToOtherNumberSystem {

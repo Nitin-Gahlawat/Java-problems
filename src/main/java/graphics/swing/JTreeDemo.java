@@ -1,5 +1,5 @@
 //Question
-    //Show the Directory Strucutre using the JTree Component.
+    //Show the Directory Structure using the JTree Component.
 //Answer
 package graphics.swing;
 

@@ -12,25 +12,25 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.Scanner;
 
-class Customber implements Serializable {
+class Customer implements Serializable {
     String id;
     String name;
     String phone;
     static private int temp = 2000;
 
-    Customber(String name, String phone) {
+    Customer(String name, String phone) {
         this.name = name;
         this.phone = phone;
         id = "c" + temp;
         temp++;
     }
 
-    Customber() {
+    Customer() {
     }
 
     @Override
     public String toString() {
-        return "Customber id : " + this.id + "\nName : " + this.name + "\nPhone :" + this.phone;
+        return "Customer id : " + this.id + "\nName : " + this.name + "\nPhone :" + this.phone;
     }
 }
 
@@ -39,14 +39,14 @@ public class ObjectIO {
         FileOutputStream fis = new FileOutputStream(f);
         ObjectOutputStream oos = new ObjectOutputStream(fis);
 
-        Customber one= new Customber("Jhon", "102558");
-        Customber two= new Customber("Smith", "7852");
-        Customber three=new Customber("Jack", "45231");
-        Customber four=new Customber("Ajay", "546325");
+        Customer one= new Customer("Jon", "102558");
+        Customer two= new Customer("Smith", "7852");
+        Customer three=new Customer("Jack", "45231");
+        Customer four=new Customer("Ajay", "546325");
 
-        Customber[] cusarr = {one,two,three,four};
+        Customer[] cusarr = {one,two,three,four};
         oos.writeInt(cusarr.length);
-        for (Customber cus : cusarr) {
+        for (Customer cus : cusarr) {
             oos.writeObject(cus);
         }
         oos.close();
@@ -60,14 +60,14 @@ public class ObjectIO {
         boolean isPresent=false;
 
         for (int i = 1; i <= ct; i++) {
-            Customber c = (Customber) ois.readObject();
+            Customer c = (Customer) ois.readObject();
             if (c.name.equalsIgnoreCase(name) && !isPresent){
                 System.out.println(c);
                 isPresent=true;
             }
         }
         if(!isPresent){
-            System.out.println("The Customber does not exit");
+            System.out.println("The Customer does not exit");
         }
 
         ois.close();
@@ -75,9 +75,9 @@ public class ObjectIO {
     }
 
     public static void main(String[] args) throws Exception {
-        String f = System.getProperty("user.dir") + "\\src\\main\\java\\streams\\Customber.txt";
+        String f = System.getProperty("user.dir") + "\\src\\main\\java\\streams\\Customer.txt";
         write(f);
-        System.out.println("Enter the name of the customber");
+        System.out.println("Enter the name of the customer");
         Scanner ob = new Scanner(System.in);
         read(f, ob.next());
         ob.close();

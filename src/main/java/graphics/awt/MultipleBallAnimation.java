@@ -1,5 +1,5 @@
 //Question 
-    //Create a Multipal bouncing ball Animation in java.awt.
+    //Create a Multiple bouncing ball Animation in java.awt.
 //Answer
 package graphics.awt;
 
@@ -13,7 +13,7 @@ import java.awt.event.WindowEvent;
 import java.util.Random;
 import java.util.ArrayList;
 
-public class MultipalBallAnimation extends Frame implements Runnable {
+public class MultipleBallAnimation extends Frame implements Runnable {
     int n=4;
     ArrayList<Integer> xList=new ArrayList<>();
     ArrayList<Integer> yList=new ArrayList<>();
@@ -23,7 +23,7 @@ public class MultipalBallAnimation extends Frame implements Runnable {
     Random r=new Random();
     Thread t=new Thread(this);
 
-    MultipalBallAnimation() {
+    MultipleBallAnimation() {
         super("Animation");
         for (int i = 0; i < n; i++) {
             ballsize.add(r.nextInt(30,80));
@@ -85,7 +85,7 @@ public class MultipalBallAnimation extends Frame implements Runnable {
     }
 
     public static void main(String[] args) {
-        MultipalBallAnimation c = new MultipalBallAnimation();
+        MultipleBallAnimation c = new MultipleBallAnimation();
         c.setVisible(true);
         c.setLayout(new FlowLayout());
         c.setSize(500, 600);

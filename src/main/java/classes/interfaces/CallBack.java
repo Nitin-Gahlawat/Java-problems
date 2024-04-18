@@ -1,7 +1,7 @@
 //Question
 	//Show the use of Interface and callback method.
 //Answer
-package classes.Interfaces;
+package classes.interfaces;
 
 interface Member{
 	void callback();

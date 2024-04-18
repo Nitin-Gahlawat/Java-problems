@@ -6,7 +6,7 @@ package loops;
 import java.util.Scanner;
 
 public class GameUsingLoops {
-	String strarr[];
+	String[] strarr;
 	
 	GameUsingLoops() {
 		strarr=new String[5];
@@ -15,18 +15,18 @@ public class GameUsingLoops {
 	void generatestr() {
 		int index=0,ct=0;
 		for (int i = 1; i <= 31; i=i*2) {
-			String temp="";
+			StringBuilder temp= new StringBuilder();
 			for (int j = 1; j < 32; j++) {
 				if((j&i)==i) {
-					temp=temp+" "+j;
+					temp.append(" ").append(j);
 					ct++;
 					if(ct==4) {
-						temp=temp+"\n";
+						temp.append("\n");
 						ct=0;
 					}
 				}
 			}
-			strarr[index++]=temp;
+			strarr[index++]= temp.toString();
 		}
 	}
 

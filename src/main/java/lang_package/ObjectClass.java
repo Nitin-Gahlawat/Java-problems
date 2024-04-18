@@ -19,7 +19,7 @@ public class ObjectClass extends Object {
 		return "ObjectClass Object is Printed";
 	}
 
-	public static void main(String[] args) throws Throwable {
+	public static void main(String[] args) {
 
 		ObjectClass ob = new ObjectClass();
 		ObjectClass ob1 = new ObjectClass();

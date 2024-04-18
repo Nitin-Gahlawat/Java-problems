@@ -1,7 +1,7 @@
 //Question
 	//WAP to show the properties and Scope of static keyword in java.
 //Answer
-package staticAndFinal;
+package static_and_final;
 class Example {
 	static String str = "hello world";
 	String abc = "Java programing";

@@ -20,7 +20,7 @@ public class Text extends Frame {
         super(" TextFiled Demo");
         l1 = new Label("No text is Entered yet");
         add(l1);
-        l2 = new Label("Enter key is not presed yet");
+        l2 = new Label("Enter key is not pressed yet");
         add(l2);
         tf = new java.awt.TextField(20);
         // tf.setEchoChar('*');

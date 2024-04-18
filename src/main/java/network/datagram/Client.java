@@ -14,7 +14,7 @@ public class Client {
 
     public static void main(String[] args) throws IOException {
 
-        try (Scanner sc = new Scanner(System.in); DatagramSocket ds = new DatagramSocket(2001);) {
+        try (Scanner sc = new Scanner(System.in); DatagramSocket ds = new DatagramSocket(2001)) {
            
             System.out.println("Enter a String");
             String s = sc.nextLine();
@@ -29,7 +29,7 @@ public class Client {
             ds.receive(dp);
 
             s = new String(dp.getData()).strip();
-            System.out.println("reciving the data from the server :-----");
+            System.out.println("receiving the data from the server :-----");
             System.out.println(s);
 
         }

@@ -1,7 +1,7 @@
 //Question
 	//Show the use of interfaces and inheritance.
 //Answer
-package classes.Interfaces;
+package classes.interfaces;
 class Phone{
 	void call() {
 		System.out.println("Calling.....");

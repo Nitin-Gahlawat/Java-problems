@@ -1,7 +1,7 @@
 //Question
 	//WAP to show Local inner Class in java.
 //Answer
-package classes.Inner;
+package classes.inner;
 class Outclass {
 	void display() {
 		class Innerclass{

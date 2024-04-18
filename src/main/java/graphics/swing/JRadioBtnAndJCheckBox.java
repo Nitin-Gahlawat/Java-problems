@@ -1,5 +1,5 @@
 //Question
-    //Create a application to Change case and style of the text in JTextField using RadioButton and CheckBox.
+    //Create an application to Change case and style of the text in JTextField using RadioButton and CheckBox.
 //Answer
 package graphics.swing;
 

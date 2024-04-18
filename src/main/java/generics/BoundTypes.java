@@ -23,7 +23,7 @@ interface B {
 class C {
 
     void displayC() {
-        System.out.println("Classs C");
+        System.out.println("Class C");
     }
 
     @Override

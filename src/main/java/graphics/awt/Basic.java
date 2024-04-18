@@ -15,7 +15,7 @@ public class Basic extends Frame implements ActionListener{
     Button b;
     Label l;
     Basic(){
-        super("This is a Basic awt appliction");
+        super("This is a Basic awt application");
 
         l=new Label(String.valueOf(count));
         add(l);

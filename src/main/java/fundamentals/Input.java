@@ -12,8 +12,8 @@ public class Input {
         // Byte a=ob.nextByte();
         // Short a=ob.nextShort();
         // long a=ob.nextLong();
-        // String a=ob.next(); //for inputing a single word
-        String a = ob.nextLine(); // for inputing a sentence
+        // String a=ob.next(); //for inputting a single word
+        String a = ob.nextLine(); // for inputting a sentence
         System.out.println(a);
         ob.close();
     }

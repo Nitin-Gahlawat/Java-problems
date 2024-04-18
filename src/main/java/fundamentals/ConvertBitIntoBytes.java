@@ -1,6 +1,6 @@
 //Question
         //WAP to convert Bits into Bytes.
-//Anaswer
+//Answer
 package fundamentals;
 import java.util.Scanner;
 public class ConvertBitIntoBytes {

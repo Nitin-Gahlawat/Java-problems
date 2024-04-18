@@ -1,5 +1,5 @@
 //Question 
-    //WAP that Display the radix of the inputed number.
+    //WAP that Display the radix of the inputted number.
 //Answer
 package selections;
 
@@ -13,11 +13,11 @@ public class RadixOfNumber {
         if(n.matches("[01]+"))
             System.out.println("Binary");
         else if (n.matches("[0-7]+"))
-            System.out.println("Ocatal");
+            System.out.println("Octal");
         else if(n.matches("[0-9]+"))
             System.out.println("Decimal");
         else if(n.matches("[0-9A-Fa-f]+"))
-            System.out.println("HexaDecimal");
+            System.out.println("HexDecimal");
         else
             System.out.println("Invalid number");
         input.close();

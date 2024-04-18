@@ -32,7 +32,7 @@ public class FileClass {
         String path1 = System.getProperty("user.dir") + "\\src\\main\\java\\streams\\main.txt";
         File file = new File(path1);
 
-        file.setReadOnly(); // As the read only is enable FileOutputStream write method give error
+        file.setReadOnly(); // As the read only is enabled FileOutputStream write method give error
         // file.setWritable(true);
 
 

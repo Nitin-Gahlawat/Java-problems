@@ -1,7 +1,7 @@
 //Question
     //WAP to show Anonymous inner Class in java.
 //Answer
-package classes.Inner;
+package classes.inner;
 interface One {
     void display();
 

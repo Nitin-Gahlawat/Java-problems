@@ -1,5 +1,5 @@
 //Question 
-    //WAP to show use of the inbuilt ProrityQueue class.
+    //WAP to show use of the inbuilt PriorityQueue class.
 //Answer
 
 package collection;
@@ -7,7 +7,7 @@ package collection;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class ProrityQueueDemo {
+public class PriorityQueueDemo {
     public static void main(String[] args) {
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         pq.addAll(List.of(3, 10, 5, 20, 15, 30));

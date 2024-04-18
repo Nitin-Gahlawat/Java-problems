@@ -12,8 +12,8 @@ import java.awt.event.MouseMotionListener;
 public class Mouse extends Frame implements MouseListener,MouseMotionListener{
     Label l1,l2,l3;
     Mouse(){
-        l1=new Label("nothing happend");
-        l2=new Label("No Motion happend");
+        l1=new Label("nothing happened");
+        l2=new Label("No Motion happened");
         l3=new Label("");
         add(l1);
         add(l2);

@@ -1,7 +1,7 @@
 //Question
 	//WAP to show Example of Dynamic dispatch and Abstract class.
 //Answer
-package classes.abstractClasses;
+package classes.abstractclass;
 abstract class Shape
 {
 	abstract double area();

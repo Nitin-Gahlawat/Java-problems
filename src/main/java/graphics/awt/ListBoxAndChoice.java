@@ -17,10 +17,10 @@ public class ListBoxAndChoice extends Frame implements ItemListener,ActionListen
     Choice c;
     TextArea ta;
     List l;
-    String ListStr[] = {
-            "Monday", "Tuesday", "Wednesday", "Thrusday", "Friday", "Saturday", "Sunday"
+    String[] ListStr = {
+            "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"
     };
-    String ChoiceStr[] = {
+    String[] ChoiceStr = {
             "Rust","Python", "Java", "lua", "c#", "c", "c++"
     };
 
@@ -57,12 +57,12 @@ public class ListBoxAndChoice extends Frame implements ItemListener,ActionListen
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource()==l){
-            String str[]=l.getSelectedItems();
-            String temp="";
+            String[] str =l.getSelectedItems();
+            StringBuilder temp= new StringBuilder();
             for (String string : str) {
-                temp+=string+"\n";
+                temp.append(string).append("\n");
             }
-            ta.setText(temp);
+            ta.setText(temp.toString());
             // l.deselect(4);
             // l.getItems()
             // l.remove();

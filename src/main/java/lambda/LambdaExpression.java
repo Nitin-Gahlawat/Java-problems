@@ -7,7 +7,7 @@ package lambda;
 
 @FunctionalInterface
 interface Sun {
-	public String tempratrue();
+	public String temperature();
 }
 
 public class LambdaExpression {
@@ -16,6 +16,6 @@ public class LambdaExpression {
 			System.out.println("The Sun is very Hot");
 			return "Above 100 Degrees";
 		};
-		System.out.println(s.tempratrue());
+		System.out.println(s.temperature());
 	}
 }

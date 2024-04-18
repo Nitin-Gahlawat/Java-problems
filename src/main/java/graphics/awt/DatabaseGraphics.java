@@ -42,7 +42,7 @@ public class DatabaseGraphics {
         return rs;
     }
 
-    DatabaseGraphics() throws SQLException, ClassNotFoundException {
+    DatabaseGraphics() {
        
     }
     public static void main(String[] args) throws ClassNotFoundException, SQLException {

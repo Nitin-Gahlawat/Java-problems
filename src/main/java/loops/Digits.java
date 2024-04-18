@@ -29,7 +29,7 @@ public class Digits {
 			System.out.println("The number is not palindrome");
 		
 	}
-	static void amstrongNumber(int n) {
+	static void armstrongNumber(int n) {
 		double rev=0;
 		int temp=n;
 		while(n!=0) {
@@ -38,18 +38,18 @@ public class Digits {
 			n=n/10;
 		}
 		if(temp==rev)
-			System.out.println("The number is Amstrong Number");
+			System.out.println("The number is Armstrong Number");
 		else
-			System.out.println("The number is not a Amstrong Number");
+			System.out.println("The number is not a Armstrong Number");
 	}
 
 	static void digitsInWords(int n) {
-		String str = "";
+		StringBuilder str = new StringBuilder();
 		// Useful for printing tailing zeros
 		while (n != 0) {
 			int r = n % 10;
 			n = n / 10;
-			str = str + r;
+			str.append(r);
 		}
 		for (int i = str.length() - 1; i >= 0; i--) {
 			switch (str.charAt(i)) {
@@ -95,10 +95,10 @@ public class Digits {
 			}
 			}
 		}
-		System.out.printf("\n");
+		System.out.print("\n");
 	}
 	public static void main(String[] args) {
-		amstrongNumber(153);
+		armstrongNumber(153);
 		digitsInWords(12450);
 		palindrome(121);
 	}

@@ -16,10 +16,10 @@ public class Client {
 
     public static void main(String[] args) throws IOException {
         System.out.println("Client is connecting...");
-        try (Socket stk = new Socket("localhost", 2000); Scanner sc = new Scanner(System.in);) {
-            System.out.println("Conntected");
+        try (Socket stk = new Socket("localhost", 2000); Scanner sc = new Scanner(System.in)) {
+            System.out.println("Connected");
             try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(stk.getOutputStream()));
-                    BufferedReader br = new BufferedReader(new InputStreamReader(stk.getInputStream()));) {
+                    BufferedReader br = new BufferedReader(new InputStreamReader(stk.getInputStream()))) {
                 String str;
                 do {
                     System.out.println("enter the string");

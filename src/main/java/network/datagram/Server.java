@@ -21,7 +21,7 @@ public class Server {
         ds.receive(dp);
         
         String s=new String(dp.getData()).strip();
-        System.out.println("Data recived\n"+s);
+        System.out.println("Data received\n"+s);
 
         s=new StringBuilder(s).reverse().toString();
 

@@ -1,5 +1,5 @@
 //Question 
-    //Create a awt application in which selected option of the Checkbox is shown in the label.
+    //Create an awt application in which selected option of the Checkbox is shown in the label.
 //Answer
 package graphics.awt;
 
@@ -9,12 +9,12 @@ import java.awt.Label;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 
-public class CheackBox extends Frame implements ItemListener {
+public class Checkbox extends Frame implements ItemListener {
     Label l;
 
     java.awt.Checkbox c1,c2, c3;
 
-    CheackBox() {
+    Checkbox() {
         super("My CheckBox");
         l = new Label("Nothing is selected ");
         add(l);
@@ -41,14 +41,14 @@ public class CheackBox extends Frame implements ItemListener {
             str+=" "+c2.getLabel();
         if(c3.getState())
             str+=" "+c3.getLabel();
-        if(str.equals(""))
+        if(str.isEmpty())
             str="Nothing is selected ";
         l.setText(str);
 
     }
 
     public static void main(String[] args) {
-        CheackBox c=new CheackBox();
+        Checkbox c=new Checkbox();
         c.setVisible(true);
         c.setLayout(new FlowLayout());
         c.setSize(450,450);

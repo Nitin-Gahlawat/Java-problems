@@ -6,8 +6,8 @@ package lang_package;
 enum Dept {
 	CS(250, "Block-A"), IT(25, "Block-F"), CIVIL(45, "Block-S"), ME(250, "Block-B");
 
-	int studentNum;
-	String block;
+	final int studentNum;
+	final String block;
 
 	private Dept(int i, String block) {
 		studentNum = i;
@@ -31,8 +31,8 @@ enum Dept {
 enum Solar {
 	sun("Bright", "Hot"), moon("Dark", "Cold");
 
-	String type;
-	String temprature;
+	final String type;
+	final String temprature;
 
 	private Solar(String a, String b) {
 		this.type = a;

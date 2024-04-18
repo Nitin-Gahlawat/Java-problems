@@ -32,7 +32,7 @@ public class MethodReference {
         mylambda m = System.out::println;
         m.display("hello");
 
-        // insatance
+        // instance
         MethodReference mobj = new MethodReference();
         mylambda m1 = mobj::reverse;
         m1.display("hello world");

@@ -1,7 +1,7 @@
 //Question
     //WAP to show use of static keyword in java.
 //Answer
-package staticAndFinal;
+package static_and_final;
 public class Car {
     static double price=20;
     static class Car_info {

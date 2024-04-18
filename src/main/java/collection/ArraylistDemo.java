@@ -57,10 +57,10 @@ public class ArraylistDemo {
             System.out.print(item + " ");
         }
 
-        System.out.println("\n********************Elements using functional opration***********************");
+        System.out.println("\n********************Elements using functional operation***********************");
         list2.forEach((x) -> System.out.print(x + " "));
 
-        System.out.println("\n**********Elements using Condtion via functional opration******************");
+        System.out.println("\n**********Elements using Condition via functional operation******************");
         list2.forEach(x -> show(x));
 
         System.out.println("\n" + list2);

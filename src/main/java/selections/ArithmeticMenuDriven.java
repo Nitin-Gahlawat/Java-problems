@@ -1,5 +1,5 @@
 //Question 
-    //Write a menu driven program for performing Arithmetic Operations.
+    //Write a menu-driven program for performing Arithmetic Operations.
 //Answer
 package selections;
 
@@ -31,7 +31,7 @@ public class ArithmeticMenuDriven {
                     System.out.println(A / B);
                     
                 } catch (ArithmeticException e) {
-                   System.out.println("Enter a valid nuber for dividing");
+                   System.out.println("Enter a valid number for dividing");
                 }
                 break;
             default:

@@ -10,8 +10,7 @@ public class LinkedHashSetDemo {
     public static void main(String[] args) {
 
         // LinkedHashSet is implemented using linkedList.
-        LinkedHashSet<String> lhs = new LinkedHashSet<>();
-        lhs.addAll(Set.of("A", "B", "C", "D"));
+        LinkedHashSet<String> lhs = new LinkedHashSet<>(Set.of("A", "B", "C", "D"));
         lhs.add("B");
         System.out.println(lhs);
 

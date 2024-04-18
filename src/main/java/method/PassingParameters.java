@@ -44,7 +44,7 @@ public class PassingParameters {
     }
 
     public static void main(String[] args) {
-        int arr[]=new int[] { 44, 5, 6, 3, 25, 2, 4, 22, 5 };
+        int[] arr =new int[] { 44, 5, 6, 3, 25, 2, 4, 22, 5 };
         arrPassing(arr);
         System.out.println("******************************************************************");
         valuePassing(50);

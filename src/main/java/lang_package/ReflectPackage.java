@@ -1,5 +1,5 @@
 //Question
-	//Show the various Classes of the reflect Package in java.
+	//Show the various Classes of the reflection Package in java.
 //Answer
 package lang_package;
 

@@ -2,9 +2,9 @@
     //WAP to print the multiplication table of all the numbers from 1 to 9.
 //Answer
 package loops;
-public class MultiplacationTable {
+public class MultiplicationTable {
     public static void main(String[] args) {
-        System.out.println("\t  Multiplacation Table ");
+        System.out.println("\t  Multiplication Table ");
         System.out.print("   ");
         for (int i = 1; i <= 9; i++) {
             System.out.printf("%4d",i);

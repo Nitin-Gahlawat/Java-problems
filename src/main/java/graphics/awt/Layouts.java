@@ -34,7 +34,7 @@ public class Layouts {
     }
 
     private Button[] addbtn(int n) {
-        Button b[] = new Button[5];
+        Button[] b = new Button[5];
         for (int j = 0; j < b.length; j++) {
             b[j] = new Button("Button " + (j + 1));
         }
@@ -50,7 +50,7 @@ public class Layouts {
         }
     }
 
-    void boderLayout() {
+    void borderLayout() {
         Frame f = FrameInit();
         f.setLayout(new BorderLayout());
         Button[] b = addbtn(5);
@@ -135,7 +135,7 @@ public class Layouts {
     public static void main(String[] args) {
         Layouts l = new Layouts();
         System.out.println("There are 5 Frame one on another created..");
-        l.boderLayout();
+        l.borderLayout();
         l.flowLayout();
         l.gridLayout();
         l.gridBagLayout();

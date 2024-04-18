@@ -5,13 +5,13 @@
 package lambda;
 
 @FunctionalInterface
-interface Calculater {
+interface Calculator {
 	int add(int a, int b);
 }
 
 public class LambdaParameter {
 	public static void main(String[] args) {
-		Calculater c = (a, b) -> a + b;
+		Calculator c = (a, b) -> a + b;
 		System.out.println(c.add(5, 6));
 	}
 }

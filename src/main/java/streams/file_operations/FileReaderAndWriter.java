@@ -1,7 +1,7 @@
 //Question
-	//Show read and write opration in a file using FileReader and FileWriter Classes.
+	//Show read and write operation in a file using FileReader and FileWriter Classes.
 //Answer
-package streams.file_oprations;
+package streams.file_operations;
 
 import java.io.FileReader;
 import java.io.FileWriter;
@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class FileReaderAndWriter {
 	public static void main(String[] args) throws IOException {
-		String pathCurrDir = System.getProperty("user.dir") + "\\src\\main\\java\\streams\\file_oprations\\";
+		String pathCurrDir = System.getProperty("user.dir") + "\\src\\main\\java\\streams\\file_operations\\";
 		FileWriter fw = new FileWriter(pathCurrDir + "reader.txt");
 
 		String str1 = "Java file Reader\n";

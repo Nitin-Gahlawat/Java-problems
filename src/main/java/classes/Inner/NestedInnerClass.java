@@ -1,7 +1,7 @@
 //Question
 	//WAP to show Nested inner class in java.
 //Answer
-package classes.Inner;
+package classes.inner;
 
 class Outer{
 	int x=10;

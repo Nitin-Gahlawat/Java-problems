@@ -11,7 +11,7 @@ public class AreaOfTriangle {
 	}
     public static void main(String[] args) {
         Scanner obj=new Scanner(System.in);
-        System.out.println("Enter the hight of the triangle:=");
+        System.out.println("Enter the height of the triangle:=");
         double height=obj.nextDouble();
         System.out.println("Enter the base of the triangle:=");
         double base=obj.nextDouble();

@@ -31,7 +31,7 @@ class DataObject {
 
     // Writing the data in the array format(array of Studentype)
     static void writearr(File f) throws IOException {
-        Studentype ob[] = new Studentype[5];
+        Studentype[] ob = new Studentype[5];
         for (int i = 0; i < ob.length; i++) {
             ob[i] = new Studentype(i, "Java Object", "Space ");
         }
@@ -46,7 +46,7 @@ class DataObject {
     static void readarr(File f) throws Exception {
         FileInputStream fis = new FileInputStream(f);
         ObjectInputStream br = new ObjectInputStream(fis);
-        Studentype s[];
+        Studentype[] s;
         s = (Studentype[]) br.readObject();
         for (int i = 0; i < 5; i++) {
             System.out.println(s[i].rollno + " " + s[i].name + " " + s[i].dept);

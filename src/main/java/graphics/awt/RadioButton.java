@@ -1,5 +1,5 @@
 //Question 
-    //Create a radio button appliction in java.awt for showing only one selection at a time. 
+    //Create a radio button application in java.awt for showing only one selection at a time.
 //Answer
 package graphics.awt;
 
@@ -44,7 +44,7 @@ public class RadioButton extends Frame implements ItemListener {
             str+=" "+c2.getLabel();
         if(c3.getState())
             str+=" "+c3.getLabel();
-        if(str.equals(""))
+        if(str.isEmpty())
             str="Nothing is selected ";
         l.setText(str);
 

@@ -8,7 +8,7 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.TimeZone;
 
-public class CalanderAndTimezone {
+public class CalenderAndTimezone {
     public static void main(String[] args) {
         GregorianCalendar gc = new GregorianCalendar();
         System.out.println("Present YEAR\t" + gc.get(Calendar.YEAR));
@@ -19,7 +19,7 @@ public class CalanderAndTimezone {
         System.out.println("Present MINUTE\t" + gc.get(Calendar.MINUTE));
         System.out.println("Present SECOND\t" + gc.get(Calendar.SECOND));
 
-        System.out.printf("Cheack for leap year (of %d)\t %b\n", gc.get(Calendar.YEAR), gc.isLeapYear(Calendar.YEAR));
+        System.out.printf("Check for leap year (of %d)\t %b\n", gc.get(Calendar.YEAR), gc.isLeapYear(Calendar.YEAR));
 
         // print all Available Time Zones
         // String[] arr=TimeZone.getAvailableIDs();

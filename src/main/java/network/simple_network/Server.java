@@ -12,7 +12,7 @@ public class Server {
 
     public static void main(String[] args) throws IOException {
         System.out.println("Server Started");
-        try (ServerSocket ss = new ServerSocket(2000);) {
+        try (ServerSocket ss = new ServerSocket(2000)) {
 
             System.out.println("Server ready to accept");
             try (Socket stk = ss.accept();
@@ -21,10 +21,10 @@ public class Server {
 
                 String recived, str;
                 do {
-                    System.out.println("Wating for the string from client ");
+                    System.out.println("Waiting for the string from client ");
                     recived = br.readLine();
 
-                    System.out.println("String reciverd is from client:---" + recived);
+                    System.out.println("String receiver is from client:---" + recived);
 
                     str = new StringBuffer(recived).reverse().toString();
 

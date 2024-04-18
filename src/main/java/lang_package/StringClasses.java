@@ -1,5 +1,5 @@
 //Question
-	//Show Diffrence between StringBuffer,String & StringBuilder.
+	//Show Difference between StringBuffer,String & StringBuilder.
 //Answer
 package lang_package;
 
@@ -13,7 +13,7 @@ public class StringClasses {
 
 		// Note
 		/***
-		 * StringBuffer is Thread Safe where as StringBuilder is not Thread Safe.
+		 * StringBuffer is Thread Safe whereas StringBuilder is not Thread Safe.
 		 */
 		
 		StringBuffer sb = new StringBuffer("Hello ");

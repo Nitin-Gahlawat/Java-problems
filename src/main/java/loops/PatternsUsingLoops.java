@@ -11,341 +11,341 @@ public class PatternsUsingLoops{
 		 1 2 3
 		 1 2 3
 	 */
-	static String patt1(int n) {
-		String str="";
+	static String pattern1(int n) {
+		StringBuilder str= new StringBuilder();
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
-				str+=(j+" ");
+				str.append(j).append(" ");
 			}
-			str+="\n";
+			str.append("\n");
 		}
-		return str;
+		return str.toString();
 	}
 	/*
 		 1 1 1
 		 2 2 2
 		 3 3 3
 	 */
-	static String patt2(int n) {
-		String str="";
+	static String pattern2(int n) {
+		StringBuilder str= new StringBuilder();
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
-				str=str+(String.format("%02d",i)+" ");
+				str.append(String.format("%02d", i)).append(" ");
 			}
-			str=str+("\n");
+			str.append("\n");
 		}
-		return str;
-	}
-	
-	/*
-	 	01 02 03 04 
-		05 06 07 08 
-		09 10 11 12 
-		13 14 15 16 
-	 */
-	static String patt3(int n) {
-		String str="";
-		int count=1;
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				str=str+(String.format("%02d",count++)+" ");
-			}
-			str=str+("\n");
-		}
-		return str;
-	}
-	/*
-		01 
-		01 02 
-		01 02 03 
-		01 02 03 04
-	*/
-	static String patt4(int n) {
-		String str="";
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if(j<=i)
-					str=str+(String.format("%02d",j)+" ");
-			}
-			str=str+("\n");
-		}
-		return str;
-	} 
-	/*
-		01 
-		02 03 
-		04 05 06 
-		07 08 09 10 
-	 */
-	static String patt5(int n) {
-		String str="";
-		int count=1;
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if(j<=i)
-					str=str+(String.format("%02d",count++)+" ");
-			}
-			str=str+("\n");
-		}
-		return str;
-	} 
-	/*
-		01 02 03 04 
-		01 02 03 
-		01 02 
-		01
-	 */
-	static String patt6(int n) {
-		String str="";
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n-i+1; j++) {
-					str=str+(String.format("%02d",j)+" ");
-			}
-			str=str+("\n");
-		}
-		return str;
-	}
-	/*
-		 * * * * * 
-		   * * * * 
-		     * * * 
-	           * * 
-	             *
-	 */
-	static String patt7(int n) {
-		String str="";
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if(j>=i)
-					str=str+("* ");
-				else
-					str+="  ";
-			}
-			str=str+("\n");
-		}
-		return str;
-	} 
-	/*
-		         * 
-		       * * 
-	 	     * * * 
-		   * * * * 
-		 * * * * * 
-	 */
-	static String patt8(int n) {
-		String str="";
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if(i+j>5)
-					str=str+("* ");
-				else
-					str+="  ";
-			}
-			str=str+("\n");
-		}
-		return str;
-	} 
-	/*
-		         * 
-		       * * * 
-		     * * * * * 
-		   * * * * * * * 
-		 * * * * * * * * * 
-	 */
-	static String patt9(int n) {
-		String str="";
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if(i+j>n)
-					str=str+("* ");
-				else
-					str+="  ";
-			}
-			for (int k = 1; k <=i-1; k++) {
-					str=str+("* ");
-			}
-			str=str+("\n");
-		}
-		return str;
-	} 
-	/*
-	          * 
-		    *   * 
-		  *   *   * 
-		*   *   *   *
-	 */
-	static String patt10(int n) {
-		String str = "";
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-				if (n%2==0 && i + j > n && (i + j) % 2 != 0)
-					str = str + ("* ");
-				else if (n%2!=0 && i + j > n && (i + j) % 2 == 0)
-					str = str + ("* ");
-				else
-					str += "  ";
-			}
-			for (int k = 1; k <= i - 1; k++) {
-				if ((i + k) % 2 != 0)
-					str = str + ("* ");
-				else
-					str += "  ";
-			}
-			str = str + ("\n");
-		}
-		return str;
-	}
-	/*
-	 	*   *   *   * 
-		  *   *   * 
-		    *   * 
-		      *
-	 */
-	static String patt11(int n) {
-		String str = "";
-		for (int i = 1; i <= n; i++) {
-			for (int j = 1; j <= n; j++) {
-					if(i<=j && (i + j) % 2 == 0)
-						str = str + ("* ");
-					else
-						str+="  ";
-			}
-			for (int k = 1; k <= n-i; k++) {
-				if (n%2!=0 && (i + k) % 2 != 0)
-					str = str + ("* ");
-				else if(n%2==0 && (i + k) % 2 == 0)
-					str+="* ";
-				else
-					str += "  ";
-			}
-			str = str + ("\n");
-		}
-		return str;
+		return str.toString();
 	}
 
 	/*
-	          * 
-		    * * * 
-		  * * * * * 
-		* * * * * * * 
-		  * * * * * 
-		    * * * 
-		      * 
+	 	01 02 03 04
+		05 06 07 08
+		09 10 11 12
+		13 14 15 16
 	 */
-	static String patt12(int n) {
-		String str="";
+	static String pattern3(int n) {
+		StringBuilder str= new StringBuilder();
+		int count=1;
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				str.append(String.format("%02d", count++)).append(" ");
+			}
+			str.append("\n");
+		}
+		return str.toString();
+	}
+	/*
+		01
+		01 02
+		01 02 03
+		01 02 03 04
+	*/
+	static String pattern4(int n) {
+		StringBuilder str= new StringBuilder();
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if(j<=i)
+					str.append(String.format("%02d", j)).append(" ");
+			}
+			str.append("\n");
+		}
+		return str.toString();
+	}
+	/*
+		01
+		02 03
+		04 05 06
+		07 08 09 10
+	 */
+	static String pattern5(int n) {
+		StringBuilder str= new StringBuilder();
+		int count=1;
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if(j<=i)
+					str.append(String.format("%02d", count++)).append(" ");
+			}
+			str.append("\n");
+		}
+		return str.toString();
+	}
+	/*
+		01 02 03 04
+		01 02 03
+		01 02
+		01
+	 */
+	static String pattern6(int n) {
+		StringBuilder str= new StringBuilder();
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n-i+1; j++) {
+					str.append(String.format("%02d", j)).append(" ");
+			}
+			str.append("\n");
+		}
+		return str.toString();
+	}
+	/*
+		 * * * * *
+		   * * * *
+		     * * *
+	           * *
+	             *
+	 */
+	static String pattern7(int n) {
+		StringBuilder str= new StringBuilder();
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if(j>=i)
+					str.append("* ");
+				else
+					str.append("  ");
+			}
+			str.append("\n");
+		}
+		return str.toString();
+	}
+	/*
+		         *
+		       * *
+	 	     * * *
+		   * * * *
+		 * * * * *
+	 */
+	static String pattern8(int n) {
+		StringBuilder str= new StringBuilder();
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if(i+j>5)
+					str.append("* ");
+				else
+					str.append("  ");
+			}
+			str.append("\n");
+		}
+		return str.toString();
+	}
+	/*
+		         *
+		       * * *
+		     * * * * *
+		   * * * * * * *
+		 * * * * * * * * *
+	 */
+	static String pattern9(int n) {
+		StringBuilder str= new StringBuilder();
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
 				if(i+j>n)
-					str=str+("* ");
+					str.append("* ");
 				else
-					str+="  ";
+					str.append("  ");
 			}
 			for (int k = 1; k <=i-1; k++) {
-					str=str+("* ");
+					str.append("* ");
 			}
-			str=str+("\n");
+			str.append("\n");
+		}
+		return str.toString();
+	}
+	/*
+	          *
+		    *   *
+		  *   *   *
+		*   *   *   *
+	 */
+	static String pattern10(int n) {
+		StringBuilder str = new StringBuilder();
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if (n%2==0 && i + j > n && (i + j) % 2 != 0)
+					str.append("* ");
+				else if (n%2!=0 && i + j > n && (i + j) % 2 == 0)
+					str.append("* ");
+				else
+					str.append("  ");
+			}
+			for (int k = 1; k <= i - 1; k++) {
+				if ((i + k) % 2 != 0)
+					str.append("* ");
+				else
+					str.append("  ");
+			}
+			str.append("\n");
+		}
+		return str.toString();
+	}
+	/*
+	 	*   *   *   *
+		  *   *   *
+		    *   *
+		      *
+	 */
+	static String pattern11(int n) {
+		StringBuilder str = new StringBuilder();
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+					if(i<=j && (i + j) % 2 == 0)
+						str.append("* ");
+					else
+						str.append("  ");
+			}
+			for (int k = 1; k <= n-i; k++) {
+				if (n%2!=0 && (i + k) % 2 != 0)
+					str.append("* ");
+				else if(n%2==0 && (i + k) % 2 == 0)
+					str.append("* ");
+				else
+					str.append("  ");
+			}
+			str.append("\n");
+		}
+		return str.toString();
+	}
+
+	/*
+	          *
+		    * * *
+		  * * * * *
+		* * * * * * *
+		  * * * * *
+		    * * *
+		      *
+	 */
+	static String pattern12(int n) {
+		StringBuilder str= new StringBuilder();
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				if(i+j>n)
+					str.append("* ");
+				else
+					str.append("  ");
+			}
+			for (int k = 1; k <=i-1; k++) {
+					str.append("* ");
+			}
+			str.append("\n");
 		}
 		for (int i = 2; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
 				if(j>=i)
-					str=str+("* ");
+					str.append("* ");
 				else
-					str+="  ";
+					str.append("  ");
 			}
 			for (int k = 1; k <=n-i; k++) {
-					str=str+("* ");
+					str.append("* ");
 			}
-			str=str+("\n");
+			str.append("\n");
 		}
-		return str;
+		return str.toString();
 	}
 	/*
-		 	*       * 
-			  *   *   
-			    *     
-			  *   *   
-			*       * 
+		 	*       *
+			  *   *
+			    *
+			  *   *
+			*       *
 	 */
-	static String patt13(int n) {
-		String str="";
+	static String pattern13(int n) {
+		StringBuilder str= new StringBuilder();
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
 				if(i==j || i==(n-j+1))
-					str=str+("* ");
+					str.append("* ");
 				else
-					str+="  ";
+					str.append("  ");
 			}
-			str=str+("\n");
+			str.append("\n");
 		}
-		return str;
+		return str.toString();
 	}
 	/*
-	           * * * * * 
-		      * * * * * 
-		    * * * * * 
-		  * * * * * 
-		* * * * * 
-	 
+	           * * * * *
+		      * * * * *
+		    * * * * *
+		  * * * * *
+		* * * * *
+
 	 */
-	static String patt14(int n) {
-		String str="";
+	static String pattern14(int n) {
+		StringBuilder str= new StringBuilder();
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
 				if(j>=(n-i+1))
-					str=str+("* ");
+					str.append("* ");
 				else
-					str+="  ";
+					str.append("  ");
 			}
 			for (int k = 1; k <= n-i; k++) {
-					str=str+("* "); 
+					str.append("* ");
 			}
-			str=str+("\n");
+			str.append("\n");
 		}
-		return str;
+		return str.toString();
 	}
-	
+
 	static private int binocoff(int line,int k) {
-		int linefact=1;
+		int line_fact=1;
 		int lineminkfact=1;
 		int kfact=1;
-		for(int i=1;i<=line;i++) 
-			linefact*=i;
-		for(int i=1;i<=(line-k);i++) 
+		for(int i=1;i<=line;i++)
+			line_fact*=i;
+		for(int i=1;i<=(line-k);i++)
 			lineminkfact*=i;
 		for(int i=1;i<=k;i++)
 			kfact*=i;
-		return linefact/(lineminkfact*kfact);
+		return line_fact/(lineminkfact*kfact);
 	}
 	/*
-			    1 
-			  1   1 
-			1   2   1 
-		  1   3   3   1 
+			    1
+			  1   1
+			1   2   1
+		  1   3   3   1
 		1   4   6   4   1
 	*/
-	static String patt15(int n) {
-		String str = "";
+	static String pattern15(int n) {
+		StringBuilder str = new StringBuilder();
 		int count=0;
 		for (int i = 1; i <= n; i++) {
 			for (int j = 1; j <= n; j++) {
 				if (n%2!=0 && i + j > n && (i + j) % 2 == 0)
-					str = str + ((binocoff(i-1,count++))+" ");
+					str.append((binocoff(i - 1, count++))).append(" ");
 				else if (n%2==0 && i + j > n && (i + j) % 2 != 0)
-					str = str + ((binocoff(i-1,count++))+" ");
+					str.append((binocoff(i - 1, count++))).append(" ");
 				else
-					str += "  ";
+					str.append("  ");
 			}
 			for (int k = 1; k <= i - 1; k++) {
 				if ((i + k) % 2 != 0)
-					str = str + ((binocoff(i-1,count++))+" ");
+					str.append((binocoff(i - 1, count++))).append(" ");
 				else
-					str += "  ";
+					str.append("  ");
 			}
-			str = str + ("\n");
+			str.append("\n");
 			count=0;
 		}
-		return str;
+		return str.toString();
 	}
 	static private char genrandom(boolean random) {
 		if(random) {
@@ -357,45 +357,45 @@ public class PatternsUsingLoops{
 		}
 		return '*';
 	}
-	static String patt16(int h,boolean random) {
-		String str="";
+	static String pattern16(int h,boolean random) {
+		StringBuilder str= new StringBuilder();
 		for(int i=1;i<=h;i++) {
 			for (int k = 0; k < h-i+2; k++) {
-				str+=" ";
+				str.append(" ");
 			}
 			for (int j = 1; j <=i; j++) {
-				str+=genrandom(random)+" ";
+				str.append(genrandom(random)).append(" ");
 			}
-			str+="\n";
+			str.append("\n");
 		}
 		for(int i=1;i<=h;i++) {
 			for (int k = 0; k < h-i+1; k++) {
-				str+=" ";
+				str.append(" ");
 			}
 			for (int j = 1; j <=i+2; j++) {
-				str+=genrandom(random)+" ";
+				str.append(genrandom(random)).append(" ");
 			}
-			str+="\n";
+			str.append("\n");
 		}
 		for(int i=1;i<=h;i++) {
 			for (int k = 0; k < h-i; k++) {
-				str+=" ";
+				str.append(" ");
 			}
 			for (int j = 1; j <=i+3; j++) {
-				str+=(genrandom(random)+" ");
+				str.append(genrandom(random)).append(" ");
 			}
-			str+="\n";
+			str.append("\n");
 		}
 		for(int i=0;i<=h;i++) {
 			for (int k = 1; k <=3; k++) {
-				str+=("  ");
+				str.append("  ");
 			}
 			for(int j=0;j<2;j++) {
-				str+="##";
+				str.append("##");
 			}
-			str+="\n";
+			str.append("\n");
 		}
-		return str;
+		return str.toString();
 	}
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
@@ -405,55 +405,55 @@ public class PatternsUsingLoops{
 		int size=sc.nextInt();
         switch (userOption) {
         case 1:
-            System.out.println(patt1(size));
+            System.out.println(pattern1(size));
             break;
         case 2:
-            System.out.println(patt2(size));
+            System.out.println(pattern2(size));
             break;
         case 3:
-            System.out.println(patt3(size));
+            System.out.println(pattern3(size));
             break;
         case 4:
-            System.out.println(patt4(size));
+            System.out.println(pattern4(size));
             break;
         case 5:
-            System.out.println(patt5(size));
+            System.out.println(pattern5(size));
             break;
         case 6:
-            System.out.println(patt6(size));
+            System.out.println(pattern6(size));
             break;
         case 7:
-            System.out.println(patt7(size));
+            System.out.println(pattern7(size));
             break;
         case 8:
-            System.out.println(patt8(size));
+            System.out.println(pattern8(size));
             break;
         case 9:
-            System.out.println(patt9(size));
+            System.out.println(pattern9(size));
             break;
         case 10:
-            System.out.println(patt10(size));
+            System.out.println(pattern10(size));
             break;
         case 11:
-            System.out.println(patt11(size));
+            System.out.println(pattern11(size));
             break;
         case 12:
-            System.out.println(patt12(size));
+            System.out.println(pattern12(size));
             break;
         case 13:
-            System.out.println(patt13(size));
+            System.out.println(pattern13(size));
             break;
         case 14:
-            System.out.println(patt14(size));
+            System.out.println(pattern14(size));
             break;
         case 15:
-            System.out.println(patt15(size));
+            System.out.println(pattern15(size));
             break;
         case 16:
         	System.out.println("You got Christmas Tree Pattern");
         	System.out.print("Do you want random Character(y/n) ");
         	String val=sc.next();
-            System.out.println(patt16(size,(val.equalsIgnoreCase("y")||val.equalsIgnoreCase("yes"))));
+            System.out.println(pattern16(size,(val.equalsIgnoreCase("y")||val.equalsIgnoreCase("yes"))));
             break;
         default:
             System.out.println("Invalid option");

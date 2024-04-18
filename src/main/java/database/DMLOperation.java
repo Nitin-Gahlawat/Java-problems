@@ -1,11 +1,11 @@
 //Question
-    //WAP to show DML Opreation on a database.
+    //WAP to show DML Operation on a database.
 //Answer
 package database;
 
 import java.sql.*;
 
-public class DMLOpration {
+public class DMLOperation {
     
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         Class.forName("org.sqlite.JDBC");  
@@ -16,7 +16,7 @@ public class DMLOpration {
         Statement s=con.createStatement();    
 
         s.executeUpdate("insert into dept values(120,'Cooking')");
-        System.out.println("Insert sucessfull");
+        System.out.println("Insert successful");
 
 
         System.out.println("The values of the dept table is");

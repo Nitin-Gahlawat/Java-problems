@@ -12,7 +12,7 @@ public class LinkedHashMapDemo {
         LinkedHashMap<Integer, String> lhm = new LinkedHashMap<>(5, 0.75f, true);
         lhm.putAll(Map.of(1, "A", 2, "B", 3, "C", 4, "D", 5, "E"));
 
-        // Accesing the elements to change the ordering of the elements
+        // Accessing the elements to change the ordering of the elements
         lhm.get(2);
         lhm.get(4);
         lhm.get(1);

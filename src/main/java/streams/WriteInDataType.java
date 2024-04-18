@@ -1,5 +1,5 @@
 //Question
-	//Write the Data into a file with there respective Data types using DataInputStream. 
+	//Write the Data into a file with their respective Data types using DataInputStream.
 //Answer
 
 

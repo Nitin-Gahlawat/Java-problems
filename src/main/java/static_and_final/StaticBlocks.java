@@ -1,7 +1,7 @@
 //Question
 	//WAP to show use of static blocks in java.
 //Answer
-package staticAndFinal;
+package static_and_final;
 class test{
 	static int s;	//static block is used to initialize
 	static {

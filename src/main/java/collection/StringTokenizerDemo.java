@@ -8,7 +8,7 @@ import java.util.TreeMap;
 
 public class StringTokenizerDemo {
     public static void main(String[] args) {
-        String Data="Name:Vijya;Address:India;Dept:Cse;City:New York";
+        String Data="Name:Vijay;Address:India;Dept:Cse;City:New York";
         StringTokenizer st=new StringTokenizer(Data,":;");
         TreeMap<String,String> tm=new TreeMap<>();
         String key="";

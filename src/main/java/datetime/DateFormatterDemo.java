@@ -8,7 +8,7 @@ import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoField;
 
-public class DateFormaterDemo {
+public class DateFormatterDemo {
     public static void main(String[] args) {
         LocalDateTime ldt = LocalDateTime.now();
         

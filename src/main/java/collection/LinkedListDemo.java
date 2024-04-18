@@ -10,8 +10,7 @@ import java.util.List;
 
 public class LinkedListDemo {
     public static void main(String[] args) {
-        LinkedList <Integer> ll=new LinkedList<>();
-        ll.addAll(List.of(70,650,54,20,01));
+        LinkedList<Integer> ll = new LinkedList<>(List.of(70, 650, 54, 20, 01));
         ll.add(70);
         ll.addLast(140);
 

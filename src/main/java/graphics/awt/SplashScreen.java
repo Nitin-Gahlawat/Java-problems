@@ -30,7 +30,7 @@ public class SplashScreen extends Thread implements ActionListener{
         try {
             int i = 0;
             while (i <= 100) {
-                Thread.sleep(1 * 100);
+                Thread.sleep(100);
                 per.setText(String.valueOf(i) + "%");
                 i++;
             }
@@ -46,7 +46,7 @@ public class SplashScreen extends Thread implements ActionListener{
     Label l;
 
     void create() {
-        Frame f = new Frame("This is a basic awt appliction");
+        Frame f = new Frame("This is a basic awt application");
 
         l = new Label(String.valueOf(count));
         f.setForeground(Color.WHITE);

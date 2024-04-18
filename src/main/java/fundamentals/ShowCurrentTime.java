@@ -4,7 +4,7 @@
 package fundamentals;
 public class ShowCurrentTime {
     public static void main(String[] args) {
-        // total milisecond since 1970
+        // total millisecond since 1970
         long totalMilliseconds = System.currentTimeMillis();
 
         // total second since midnight Jan 1,1970
